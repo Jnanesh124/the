@@ -74,8 +74,8 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>Ur Requested Movie {search} \n\nAvailable In Below Group\n\n👇Ask Here </b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/movies_hub_official1")]])
+         text=f"<b>Ur Requested Movie {search} \n\nFirst U Need To Subscribe My YouTube channel To Get Direct File\n\n Subscribe:- https://youtube.com/@Jnentertainment.?si=-xZOdUGBD3yxLjgW\n\nAfter Subscribe ask again below Group than u get Direct file📤</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🗣 Ask Here For Ur Movie 🗣", url=f"https://telegram.me/+8YbNy2GE0CI4ZDI1")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
