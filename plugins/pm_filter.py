@@ -155,8 +155,6 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-    except KeyError:
-        await save_group_settings(query.message.chat.id, 'auto_delete', True)
     try:
         if settings['max_btn']:
             if 0 < offset <= 10:
