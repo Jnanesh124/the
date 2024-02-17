@@ -298,9 +298,6 @@ async def language_check(bot, query):
             ]
 
                     
-        except KeyError:
-            await save_group_settings(query.message.chat.id, 'auto_delete', True)
-            
         if offset != "":
             key = f"{query.message.chat.id}-{query.message.id}"
             BUTTONS[key] = movie
