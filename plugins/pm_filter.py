@@ -1634,7 +1634,6 @@ async def auto_filter(client, msg, spoll=False):
                 await message.delete()
     else:
         fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
         try:
             if settings['auto_delete']:
                 await asyncio.sleep(60)
